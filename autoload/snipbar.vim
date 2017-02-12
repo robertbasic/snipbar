@@ -58,7 +58,7 @@ function! s:Scratch()
 endfunction
 
 function! s:Open()
-    exe 'silent botright vertical 40split ' . s:snipbar_buffer
+    exe 'silent keepalt botright vertical 40split ' . s:snipbar_buffer
     setlocal buftype=nofile bufhidden=hide noswapfile nobuflisted
     setlocal textwidth=0 nolist nowrap winfixwidth nospell nomodifiable
     let s:snipbar_window = win_getid()
